@@ -1,0 +1,27 @@
+package test.com;
+
+public class Test03BoardDAO {
+
+	Aaa a;
+	Bbb b;
+
+	public int insert(Test03BoardVO vo) {
+		System.out.println(vo);
+		return 0;
+	}
+	public int update(Test03BoardVO vo) {
+		return 0;
+	}
+	public int delete(Test03BoardVO vo) {
+		return 0;
+	}
+	public Test03BoardVO selectOne(Test03BoardVO vo) {
+		return new Test03BoardVO();// null이 아니게 해주는 것 >> 객체생성
+	}
+	public Test03BoardVO[] selectAll() {
+		Test03BoardVO vo1 = new Test03BoardVO();
+		vo1.setNum(10);
+		return new Test03BoardVO[] {new Test03BoardVO(),new Test03BoardVO(),new Test03BoardVO()};// null이 아니게 해주는 것 >> 객체생성
+	}
+
+}

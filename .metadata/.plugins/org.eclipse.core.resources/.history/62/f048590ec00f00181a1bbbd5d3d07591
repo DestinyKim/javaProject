@@ -1,0 +1,11 @@
+package test.com;
+
+public abstract class Test03AbsClass {
+
+	public void aaa() {
+
+	}
+	
+	public abstract int void aaa2();
+
+}

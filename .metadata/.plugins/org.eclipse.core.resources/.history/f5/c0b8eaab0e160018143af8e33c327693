@@ -1,0 +1,12 @@
+package test.com.view;
+
+public class Test01main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("GUI swing awt");
+		
+		new Test01HomePage(); //main에 homepage 불러옴
+	}
+
+}

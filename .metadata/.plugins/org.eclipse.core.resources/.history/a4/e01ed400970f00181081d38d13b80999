@@ -1,0 +1,65 @@
+package test.com;
+
+public class Test04ScoreMain {
+
+	public static void main(String[] args) {
+		System.out.println("score...");
+		Test04ScoreDAO dao = new Test04ScoreDAO();
+		System.out.println(dao);
+
+		// 입력,수정,삭제,검색(단일결과,복수결과)
+		// 1.insert(Test04ScoreVO vo):int
+		Test04ScoreVO vo = new Test04ScoreVO();
+		vo.setNum(1);
+		vo.setName("kim");
+		vo.setKor(100);
+		vo.setEng(90);
+		vo.setMath(80);
+		vo.setTotal(vo.getKor()+vo.getEng()+vo.getMath());
+		vo.setAvg(vo.getTotal()/3.0);
+		String grade = "";
+		if(vo.getAvg()>=90) {
+			grade = "A";
+		}else if(vo.getAvg()>= 80) {
+			grade = "B";
+		}else if(vo.getAvg()>= 70) {
+			grade = "C";
+		}else {
+			grade="과락";
+		}
+		vo.setGrade(grade);
+		
+		int result1 = dao.insert(vo);
+		
+		System.out.println("result1" + result1);
+
+		// 2.update(Test04ScoreVO vo):int
+				
+		
+		System.out.println("result1" + result1);
+
+
+		Test04ScoreVO vo2 = new Test04ScoreVO();
+		int result2 = dao.update(vo2);
+		System.out.println("result2" + result2);
+
+		// 3.delete(Test04ScoreVO vo):int
+		Test04ScoreVO vo3 = new Test04ScoreVO();
+		int result3 = dao.delete(vo3);
+		System.out.println("result3" + result3);
+
+		// 4.selectOne(Test04ScoreVO vo):Test04ScoreVO
+		Test04ScoreVO vo4 = new Test04ScoreVO();
+		Test04ScoreVO result4 = dao.selectOne(vo4);
+		System.out.println("result4:" + result4);
+		
+		// 5.selectAll:Test04ScoreVO []
+		Test04ScoreVO[] result5 = dao.selectAll();
+		System.out.println("result5:" + result5);
+		System.out.println("result5.length:" + result5.length);
+		System.out.println(result5[0]);
+		System.out.println(result5[1]);
+		
+	}
+
+}

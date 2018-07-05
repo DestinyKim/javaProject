@@ -1,0 +1,42 @@
+package test.com;
+
+public class Test01Main {
+
+	public static void main(String[] args) {
+		System.out.println("main...상속");
+		
+		Test01Person p = new Test01Person();
+		System.out.println(p.sid);
+		System.out.println(p.name);
+		System.out.println(p.fm);
+		System.out.println(p.address);
+		p.ppp();
+		
+		Test01Student st = new Test01Student();
+		System.out.println(st.sid);
+		System.out.println(st.name);
+		System.out.println(st.fm);
+		System.out.println(st.address);
+		System.out.println(st.kor);
+		st.ppp();
+		st.sss();
+		
+		Test01MiddleStudent mst = new Test01MiddleStudent();
+		System.out.println(mst.sid);
+		System.out.println(mst.name);
+		System.out.println(mst.fm);
+		System.out.println(mst.address);
+		System.out.println(mst.kor);
+		System.out.println(mst.eng);
+		System.out.println(mst.math);
+		System.out.println(mst.total);
+		System.out.println(mst.avg);
+		System.out.println(mst.grade);
+		System.out.println(mst.java);
+		mst.ppp();
+		mst.sss();
+		
+		
+	}
+
+}

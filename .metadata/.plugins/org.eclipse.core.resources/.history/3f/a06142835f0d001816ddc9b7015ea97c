@@ -1,0 +1,26 @@
+package test.com;
+
+public class Test03BoardDAO {
+
+	int num;
+	String title;
+	String content;
+	String name;
+
+	public void setNumber() {
+
+	}
+
+	public void title() {
+
+	}
+
+	public void content() {
+
+	}
+
+	public void name() {
+
+	}
+
+}

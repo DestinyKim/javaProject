@@ -1,0 +1,15 @@
+package test11Member;
+
+public interface test11MemberDAO {
+	
+	public int insert();
+
+	public int update();
+
+	public int delete();
+
+	public test11MemberVO vo();
+
+	public test11MemberVO[] test11memberVO();
+
+}

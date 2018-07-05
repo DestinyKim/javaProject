@@ -1,0 +1,39 @@
+package test.com;
+
+public class Test01Main {
+	// 2. 전역변수, 멤버필드(자바), 인스턴스변수, 멤버변수
+	
+	int num;
+	String name;
+
+	// 3. 생성자(Constructor)
+	public Test01Main() {
+	}
+
+	public Test01Main(int num, String name) {
+
+	}
+
+	
+	
+	//4. 함수(method)
+	//[접근제한자] [정의제한자] type 함수명(){}
+	//함수의 종류 가. 매개변수(소괄호 안에 선언된 변수) 무, 반환(return, result) 무 
+	
+	// 나. 매개변수 유, return 무
+	
+	// 다. 매개변수 무, return 유
+	
+	// 라. 매개변수 유, return 유
+	
+	// 5. inner class(내부클래스, 중첩클래스)-클래스 안에 클래스
+
+	public static void main(String[] args) {
+
+		System.out.println("method 함수, 펑션(function), 오퍼레이터(Operator)");
+
+		// 1. 변수선언 및 초기화 : 지역변수, 로컬변수, local variable, local value
+
+	}
+
+}

@@ -1,0 +1,16 @@
+package test.com;
+
+public class Test04ScoreDAO {
+	
+	Aaa a;
+	Bbb b;
+	
+	public int insert(Test04ScoreVO vo) {
+		System.out.println("score...");
+
+		return 1;
+	}
+
+	
+
+}

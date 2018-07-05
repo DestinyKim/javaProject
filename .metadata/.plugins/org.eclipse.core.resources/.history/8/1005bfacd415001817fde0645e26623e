@@ -1,0 +1,5 @@
+package test11Member;
+
+public interface test11MemberDBinfo {
+
+}

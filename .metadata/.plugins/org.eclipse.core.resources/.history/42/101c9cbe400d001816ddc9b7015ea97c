@@ -1,0 +1,16 @@
+package test.com;
+
+public class Test02ScoreMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Score main...");
+		
+		Test02Score score = new Test02Score();
+		System.out.println(score);
+		score.aaa1(100);
+		System.out.println(score.kor);
+	}
+
+	
+}

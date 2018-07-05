@@ -1,0 +1,25 @@
+package test.com;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Test01Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Collection...");
+		
+		//1.List
+		List<String> list = new ArrayList<String>() ;//<E>: 가변배열이란 것을 명시해 주는 것./ArrayList로 임포트 안하면 오버라이딩 해야함.
+		
+		
+		
+		//2.Set
+		
+		
+		
+		
+		//3.Map
+	}
+
+}

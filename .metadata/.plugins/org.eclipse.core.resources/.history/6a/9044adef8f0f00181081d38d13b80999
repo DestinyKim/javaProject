@@ -1,0 +1,18 @@
+package test.com;
+
+public class Test04ScoreDAO {
+	
+	//1.insert
+	public int insert(Test04ScoreVO vo) {
+		System.out.println("insert()...");
+		return 0;
+	}
+	//2.update
+	
+	//3.delete
+	
+	//4.selectOne
+	
+	//5.selectAll
+
+}

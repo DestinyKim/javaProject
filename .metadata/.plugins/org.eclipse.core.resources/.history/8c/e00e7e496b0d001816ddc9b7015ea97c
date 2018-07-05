@@ -1,0 +1,47 @@
+package test.com;
+
+public class Test03BoradMain {
+
+	public static void main(String[] args) {
+		System.out.println("board main");
+
+		// 게시글 : 객체(글번호, 제목, 내용, 작성자)
+		// 게시글처리 : 객체
+		Test03BoardDAO dao = new Test03BoardDAO();
+		
+		//1.insert 글작성, 저장, 삽입, 생성
+		Test03BoardVO vo1 = new Test03BoardVO();
+		vo1.setNum(1);
+		vo1.setTitle("java");
+		vo1.setContent("study");
+		vo1.setName("kim");
+		int result1 = dao.insert(vo1);
+		System.out.println("result:"+result1);
+
+		//2.update
+		Test03BoardVO vo2 = new Test03BoardVO();
+		vo2.setNum(2);
+		vo2.setTitle("phython");
+		vo2.setContent("talk");
+		vo2.setName("park");
+		int result2 = dao.update(vo2);
+		System.out.println("result:"+result2);
+		
+		//3.delete
+		Test03BoardVO vo3 = new Test03BoardVO();
+		vo3.setNum(3);
+		vo3.setTitle("c++");
+		vo3.setContent("discuss");
+		vo3.setName("lee");
+		int result3 = dao.delete(vo3);
+		System.out.println("result:"+result3);
+		
+		//4.selectOne
+		
+		
+				
+		
+		//5.selectAll
+	}
+
+}

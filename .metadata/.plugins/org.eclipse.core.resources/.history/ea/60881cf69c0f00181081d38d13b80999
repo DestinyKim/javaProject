@@ -1,0 +1,10 @@
+package test.com;
+
+public class Test01Student {
+	
+	String sid;//주민번호
+	String name;//이름
+	int fm;//성별
+	String address;//주소
+
+}

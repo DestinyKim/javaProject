@@ -1,0 +1,45 @@
+package test.com.view;
+
+import java.awt.Container;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class Test01HomePage extends JFrame {
+
+	public Test01HomePage() {
+		System.out.println("Test01HomePage...");
+
+		Container con = getContentPane(); // 박스 집어넣을 공간
+		con.setLayout(new GridLayout(2, 1));// 2행 1렬로 공간 나눔.
+
+		JButton insertBtn = new JButton("InsertPage");// 첫번째 버튼 생성 및 버튼 이름 설정
+		insertBtn.addActionListener(new ActionListener() {
+			@Override // 버튼 누르면 하고 싶은 걸 세팅
+			public void actionPerformed(ActionEvent arg0) {
+				System.out.println("clicked insertBtn");
+				new Test01InsertPage();
+			}
+		});
+
+		JButton selectBtn = new JButton("SelectAllPage");// 두번째 버튼 생성 및 버튼 이름 설정
+		insertBtn.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				System.out.println("clicked selectBtn");
+				new Test01SelectAllPage();
+			}
+		});
+		con.add(insertBtn);
+		con.add(selectBtn);
+
+		setTitle("HomePage");// 박스 제목 설정
+		setBounds(0, 0, 250, 300);// 박스 크기 설정
+		setVisible(true);// 아이콘 보여주는 실행문
+	}
+
+}

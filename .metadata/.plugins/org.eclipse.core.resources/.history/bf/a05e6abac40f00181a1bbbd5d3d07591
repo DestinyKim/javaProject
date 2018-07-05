@@ -1,0 +1,5 @@
+package test.com;
+
+public class Test03productImpl implements Test03product{
+
+}

@@ -1,0 +1,48 @@
+package test.com;
+
+public class Test01main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("start Thread~~Runnable");
+			
+		
+		
+		//1.Thread 이너클래스로 thread로 돌리는 것
+//		Theread t = new Thread() {
+//			@Override
+//			public void run() {
+//				for (int i = 0; i < 10; i++) {
+//					System.out.println("run"+i);
+//				}
+//			}
+//		};
+//		t. start();
+		new Thread() {
+			@Override
+			public void run() {
+				for (int i = 0; i < 10; i++) {
+					System.out.println("run"+i);
+					try {
+						Thread.sleep(1000);
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				}
+			}
+		}.start();
+		
+		
+		//2.extends Thread
+		Test01ThreadEx tex = new Test01ThreadEx();
+		tex.start();
+		
+		
+		//3.implements Runnable
+		
+		
+		System.out.println("end Thread~~Runnable");
+	}
+
+}

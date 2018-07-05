@@ -1,0 +1,29 @@
+package test.com;
+
+public class Test03Main {
+	static String k_name;
+
+	public static void main(String[] args) {
+		System.out.println("interface...");
+
+		System.out.println(Test03product.P_NAME);
+//		Test03product.P_NAME = "";
+		System.out.println(Test03Main.k_name);
+		Test03Main.k_name = "aaa";
+		
+		Test03AbsClass ac = new Test03AbsClass() {
+
+			@Override
+			public int aaa2(int x) {
+				// TODO Auto-generated method stub
+				return 0;
+			}
+			
+		};
+		ac.aaa();
+		ac.aaa2(99);
+		
+		
+	}
+
+}

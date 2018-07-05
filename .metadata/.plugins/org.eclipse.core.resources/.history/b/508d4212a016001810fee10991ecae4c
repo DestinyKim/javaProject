@@ -1,0 +1,7 @@
+package test.com.view;
+
+import javax.swing.JFrame;
+
+public class Test01SelectOnePage extends JFrame {
+
+}

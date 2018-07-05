@@ -1,0 +1,24 @@
+package test.com;
+
+public class Test02Score {
+
+	int kor;
+	int eng;
+	int math;
+	int total = kor + eng + math;
+
+	// 1.aaa1 : 국어성적을 받아서 멤버변수 국어에 저장하는 메소드
+	public void aaa1(int kor) {
+		this.kor = kor;
+		System.out.println(kor);
+	}
+
+	// 2.aaa2 : 멤버변수에 저장된 영어점수를 반환하는 메소드
+
+	// 3.aaa3 : 수학성적을 받아서 멤버변수 수학에 저장하는 메소드
+
+	// 4.aaa4 : 영어성적을 받아서 멤버변수 영어에 저장하는 메소드
+
+	// 5.aaa5 : 멤버변수 국어, 영어, 수학 점수를 합계한 결과를 받는 메소드
+
+}

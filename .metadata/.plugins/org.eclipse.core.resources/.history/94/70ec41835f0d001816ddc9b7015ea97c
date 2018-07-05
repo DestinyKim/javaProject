@@ -1,0 +1,42 @@
+package test.com;
+
+public class Test03BoardVO {
+
+	int num;
+	String title;
+	String content;
+	String name;
+
+	public void setNumber() {
+
+	}
+
+	public void getNumber() {
+
+	}
+
+	public void setTitle() {
+
+	}
+
+	public void getTitle() {
+
+	}
+
+	public void setContent() {
+
+	}
+
+	public void getContent() {
+
+	}
+
+	public void setName() {
+
+	}
+
+	public void getName() {
+
+	}
+
+}

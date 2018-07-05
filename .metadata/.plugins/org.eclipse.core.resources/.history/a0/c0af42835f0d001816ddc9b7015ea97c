@@ -1,0 +1,27 @@
+package test.com;
+
+public class Test03BoardDAO {
+
+	Aaa a;
+	Bbb b;
+
+	public int insert(Test03BoardVO vo) {
+		return (0);
+	}
+
+	public int update(Test03BoardVO vo) {
+		return (0);
+	}
+
+	public int delete(Test03BoardVO vo) {
+		return (0);
+	}
+
+	public Test03BoardVO selectOne(Test03BoardVO vo) {
+		return (null);//Test03BoardVO을 반환해 줘야 한다.
+	}
+
+	public Test03BoardVO[] selectAll() {
+		return (null);
+	}
+}

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;test12Score/liv&apos; to &apos;lib&apos;" description="Rename resource &apos;liv&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="liv" name="lib" stamp="1518596272047" updateReferences="true"/>&#x0A;<refactoring accessors="true" comment="Delete element from project &apos;test12Score&apos;&#x0D;&#x0A;- Original project: &apos;test12Score&apos;&#x0D;&#x0A;- Original element: &apos;test.com.Test12ScoreDAO.java&apos;" description="Delete element" element1="/src&lt;test.com{Test12ScoreDAO.java" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1518596453518" subPackages="false" version="1.0"/>
+</session>

@@ -1,0 +1,65 @@
+package test.com;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Set;
+
+public class Test01Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Collection...");
+		
+		//1.List 순서 유, 중복 허용
+		List<String> list = new ArrayList<String>() ;//<E>: 가변배열이란 것을 명시해 주는 것./ArrayList로 임포트 안하면 오버라이딩 해야함.
+//		List<String> list = new Vector<String>() ;//Vector가 더 빨리 처리 가능함.그러나 결과가 정확하지 않을 수 있음.
+//		List<String> list = new LinkedList()<String>() ;
+		list.add("10040");
+		list.add("10041");
+		list.add("10042");
+		list.add(String.valueOf(1004));
+		list.add(new String(new char[] {'a','b'}));
+		list.add(new String(new char[] {'a','b'}));
+		list.add(new String(new char[] {'a','b'}));
+		list.add(list.toString());
+		System.out.println("list.size():"+list.size());
+		
+//		list.remove(0);
+		System.out.println("list.size():"+list.size());
+		list.set(4, "kim");
+		
+		for (int i = 0; i < list.size(); i++) {
+			System.out.println(list.get(i));
+		}
+		for (String x : list) {
+			System.out.println(x);
+		}
+					
+		//2.Set : 순서 무(인덱스 발생 x), 중복 불가 >>유니크한 데이터 
+		Set<Integer> set  = new HashSet<Integer>();
+		set.add(1000);
+		set.add(10001);
+		set.add(1000);
+		set.add(10001);
+		System.out.println("set.size():"+set.size());
+		
+		
+		set.remove(10001);>>동일한 값이 없기 때문에, 인덱스가 없다.
+		
+		Iterator<Integer> it = set.iterator();
+		while (it.hasNext()) {
+			Integer x = (Integer) it.next();
+			System.out.println(x);
+		}
+		for (Integer x : set) {
+			System.out.println(x);
+		}
+		
+		
+		//3.Map
+	}
+
+}

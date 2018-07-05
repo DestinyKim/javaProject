@@ -1,0 +1,16 @@
+package test.com;
+
+public class Test03BoradMain {
+
+	public static void main(String[] args) {
+		System.out.println("board main");
+
+		//게시글 : 객체(글번호, 제목, 내용, 작성자)
+		//게시글처리 : 객체
+		Test03BoardDAO dao =  new Test03BoardDAO();
+		Test03BoardVO vo1 = new Test03BoardVO();
+		dao.insert(vo1);
+		
+	}
+
+}

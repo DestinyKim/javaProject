@@ -1,0 +1,71 @@
+package test.com.view;
+
+import java.awt.Container;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+
+import test.com.model.Test01VO;
+
+public class Test01SelectOnePage extends JFrame {
+
+public	Test01SelectOnePage() {
+	System.out.println("SelectOnePage");
+	
+		Container con = getContentPane();
+		con.setLayout(new GridLayout(7,2));
+		
+		final JTextField jt_col2 = new JTextField("11");
+		final JTextField jt_col3 = new JTextField("22");
+		final JTextField jt_col4 = new JTextField("33");
+		final JTextField jt_col5 = new JTextField("44");
+		final JTextField jt_col6 = new JTextField("55");
+		final JTextField jt_col7 = new JTextField("66");
+		
+		JButton updateOK = new JButton("UpdatePage");
+		updateOK.addActionListener(new ActionListener() {
+
+			public void actionPerformed(ActionEvent arg0) {
+				System.out.println("Clicked updateOK");
+				
+			}
+	
+		});
+		JButton deleteBtn = new JButton("Delete");
+		deleteBtn.addActionListener(new ActionListener() {
+
+			public void actionPerformed(ActionEvent arg0) {
+				System.out.println("Clicked updateOK");
+				
+			}
+	
+		});
+		
+}
+		
+
+	Test01SelectOnePage(int col1) {
+		
+		Test01VO vo = new Test01VO();
+
+		vo.setColumn1(col1);
+
+		Test01VO vo2 = Test01HomePage.dao.selectOne(vo);
+		System.out.print(vo2.getColumn1() + " ");
+		System.out.print(vo2.getColumn2() + " ");
+		System.out.print(vo2.getColumn3() + " ");
+		System.out.print(vo2.getColumn4() + " ");
+		System.out.print(vo2.getColumn5() + " ");
+		System.out.println(vo2.getColumn6());
+
+
+		setTitle("SelectOnePage");
+		setBounds(0, 300, 250, 250);
+		setVisible(true);
+		
+	}
+}

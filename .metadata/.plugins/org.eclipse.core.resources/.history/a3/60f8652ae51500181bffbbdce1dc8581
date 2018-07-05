@@ -1,0 +1,35 @@
+package test.com;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+public class Test02Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Collection...");
+	
+		//(매개변수들), {객체}, [배열]
+		// 1,2,3,4,5
+		// [1,2,3,4,5]
+		//{a1:1,a2:2,a3:3,a4:4,a5:5}
+		//{arr1:[1,2,3,4,5],arr2:[10,20,30,40,50]}
+		//[[1,2,3,4,5],[1,2,3,4,5]]
+		//[{a1:1,a2:2,a3:3,a4:4,a5:5},{a1:1,a2:2,a3:3,a4:4,a5:5}]
+		TestVO[] vos = new TestVO[2];//방개수 2개
+		
+		List<TestVO> list = new ArrayList<TestVO>(); //방개수 3개
+		TestVO vo = new TestVO();
+		list.add(new TestVO());
+		list.add(new TestVO());
+		list.add(new TestVO());
+		System.out.println("list.size():"+list.size());
+	}
+
+}

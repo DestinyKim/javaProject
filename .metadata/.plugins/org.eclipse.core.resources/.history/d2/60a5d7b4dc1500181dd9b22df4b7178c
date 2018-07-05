@@ -1,0 +1,32 @@
+package test.com;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Test01Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Collection...");
+		
+		//1.List 순서 유, 중복 허용
+		List<String> list = new ArrayList<String>() ;//<E>: 가변배열이란 것을 명시해 주는 것./ArrayList로 임포트 안하면 오버라이딩 해야함.
+		list.add("1004");
+		list.add("1004");
+		list.add("1004");
+		list.add(String.valueOf(1004));
+		list.add(new String(new char[] {'a','b'}));
+		list.add(new String(new char[] {'a','b'}));
+		list.add(new String(new char[] {'a','b'}));
+		list.add(list.toString());
+		System.out.println("list.size():"+list.size());
+		
+		//2.Set
+		
+		
+		
+		
+		//3.Map
+	}
+
+}

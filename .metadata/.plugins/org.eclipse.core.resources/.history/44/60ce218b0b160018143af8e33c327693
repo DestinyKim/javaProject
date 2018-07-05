@@ -1,0 +1,51 @@
+package test.com.view;
+
+import java.awt.Container;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class Test01InsertPage extends JFrame {
+	
+	public Test01InsertPage() {
+		System.out.println("Test01InsertPage...");
+		
+		Container con = getContentPane(); // 박스 집어넣을 공간
+		con.setLayout(new GridLayout(6, 2));// 2행 1렬로 공간 나눔.
+	
+		JButton okBtn = new JButton("OK");
+		okBtn.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				System.out.println("cliked okBtn");
+				
+			}
+		});
+		
+		con.add(new JLabel("col2"));
+		con.add(new JTextField("aaa"));
+		
+		con.add(new JLabel("col3"));
+		con.add(new JTextField("bbb"));
+		
+		con.add(new JLabel("col4"));
+		con.add(new JTextField("ccc"));
+		
+		con.add(new JLabel("col5"));
+		con.add(new JTextField("ddd"));
+		
+		con.add(new JLabel("col6"));
+		con.add(new JTextField("eee"));
+				
+		
+		setTitle("InsertPage");// 박스 제목 설정
+		setBounds(250, 0, 250, 300);// 박스 크기 설정
+		setVisible(true);// 아이콘 보여주는 실행문
+	}
+}

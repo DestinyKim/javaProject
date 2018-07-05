@@ -1,0 +1,75 @@
+package test.com.view;
+
+import java.awt.Container;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class Test01InsertPage extends JFrame {
+	
+	public Test01InsertPage() {
+		System.out.println("Test01InsertPage...");
+		
+		Container con = getContentPane(); // 박스 집어넣을 공간
+		con.setLayout(new GridLayout(6, 2));// 2행 1렬로 공간 나눔.
+	
+		final JTextField jt_col2 = new JTextField("aaa");
+		final JTextField jt_col3 = new JTextField("bbb");
+		final JTextField jt_col4 = new JTextField("ccc");
+		final JTextField jt_col5 = new JTextField("ddd");
+		final JTextField jt_col6 = new JTextField("eee");
+			
+		JButton okBtn = new JButton("OK");
+		okBtn.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				System.out.println("cliked okBtn");
+				System.out.println(jt_col2.getText());
+				System.out.println(jt_col3.getText());
+				System.out.println(jt_col4.getText());
+				System.out.println(jt_col5.getText());
+				System.out.println(jt_col6.getText());
+				
+			}
+		});
+		JButton selectBtn = new JButton("SelectAllPage");
+		selectBtn.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				System.out.println("clicked selectBtn");
+				new Test01SelectAllPage();
+//				dispose();// selectBtn 누르면 해당 창은 띄우고 insertBtn은 닫아.
+//				System.exit(0);// 시스템에 명령을 줘서 모든 로직을 다 꺼주는기능 완전종료
+				setVisible(false);//안보기
+			}
+		});
+		
+		con.add(new JLabel("col2"));
+		con.add(jt_col2);
+		
+		con.add(new JLabel("col3"));
+		con.add(jt_col3);
+		
+		con.add(new JLabel("col4"));
+		con.add(jt_col4);
+		
+		con.add(new JLabel("col5"));
+		con.add(jt_col5);
+		
+		con.add(new JLabel("col6"));
+		con.add(jt_col6);
+		con.add(okBtn);
+		con.add(selectBtn);
+		
+		
+		setTitle("InsertPage");// 박스 제목 설정
+		setBounds(250, 0, 250, 300);// 박스 크기 설정
+		setVisible(true);// 아이콘 보여주는 실행문
+	}
+}

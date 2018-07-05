@@ -1,0 +1,12 @@
+package test.com.view;
+
+import javax.swing.JFrame;
+
+public class Test01HomePage extends JFrame {
+
+	public Test01HomePage(){
+		System.out.println("Test01HomePage...");
+		setVisible(true);
+	}
+
+}

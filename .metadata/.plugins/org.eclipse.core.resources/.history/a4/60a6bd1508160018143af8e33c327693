@@ -1,0 +1,14 @@
+package test.com.view;
+
+import javax.swing.JFrame;
+
+public class Test01InsertPage extends JFrame {
+	
+	public Test01InsertPage() {
+		System.out.println("Test01InsertPage...");
+		
+		setTitle("InsertPage");// 박스 제목 설정
+		setBounds(250, 0, 250, 300);// 박스 크기 설정
+		setVisible(true);// 아이콘 보여주는 실행문
+	}
+}

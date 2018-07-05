@@ -1,0 +1,6 @@
+package test.com;
+
+public class Test03AbsClassEx extends Test03AbsClass{
+
+	
+}

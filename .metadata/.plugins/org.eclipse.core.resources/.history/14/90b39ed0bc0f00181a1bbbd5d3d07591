@@ -1,0 +1,29 @@
+package test.com;
+
+public class Test01Person{
+
+	String sid;//주민번호
+	String name;//이름
+	int fm;//
+	String address;
+	
+	public Test01Person() {
+		System.out.println("Test01Person()...");
+		sid = "989898";
+		name = "kim";
+		fm = 0;
+		address = "seoul";
+	}
+	
+	public Test01Person(int i) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public void ppp() {
+		System.out.println("Person.ppp()");
+	}
+	public void ppp2() {
+		ppp();
+	}
+	
+}

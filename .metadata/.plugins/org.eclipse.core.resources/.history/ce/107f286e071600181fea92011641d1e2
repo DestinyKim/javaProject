@@ -1,0 +1,10 @@
+package test.com.view;
+
+import javax.swing.JFrame;
+
+public class Test01InsertPage extends JFrame {
+	
+	public Test01InsertPage() {
+		System.out.println("Test01InsertPage...");
+	}
+}

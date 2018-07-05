@@ -1,0 +1,21 @@
+package test.com;
+
+public class Test04ScoreDAO {
+	
+	Aaa a;
+	Bbb b;
+	
+	public int insert(Test04ScoreVO vo) {
+		System.out.println(vo);
+		System.out.println(vo.getNum());
+		System.out.println(vo.getName());
+		System.out.println(vo.getKor());
+		System.out.println(vo.getEng());
+		System.out.println(vo.getMath());
+
+		return 1;
+	}
+
+	
+
+}
